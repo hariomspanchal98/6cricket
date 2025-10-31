@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TimerRoutingModule } from './timer-routing-module';
 import { Dashboard } from './dashboard/dashboard';
 import { CountDown } from './count-down/count-down';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CountDown } from './count-down/count-down';
   ],
   imports: [
     CommonModule,
-    TimerRoutingModule
+    TimerRoutingModule,
+    FormsModule
   ]
 })
 export class TimerModule { }

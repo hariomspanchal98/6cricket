@@ -1,1 +1,9 @@
-<p>count-down works!</p>
+<div class="countdown-container">
+
+    <div *ngIf="loading && !secondsLeft" class="spinner"></div>
+
+    <p *ngIf="secondsLeft > 0">
+        Seconds left to deadline: {{ secondsLeft }}
+    </p>
+
+</div>
